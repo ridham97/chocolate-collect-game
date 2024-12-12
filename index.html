@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chocolate Collection Game</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <h1>Chocolate Collection Game</h1>
+        </div>
+
+        <div class="controls">
+            <label>
+                Grid Size:
+                <input type="number" id="gridSize" min="3" max="10" value="3">
+            </label>
+            <button onclick="generateGrid()">Generate Grid</button>
+            <button onclick="resetGame()">Reset Game</button>
+            <button onclick="toggleAutoPlay()">Auto Play</button>
+        </div>
+
+        <div class="scores">
+            <div class="score-card">
+                <div class="score-label">Robot 1</div>
+                <div class="score-value" id="score1">0</div>
+            </div>
+            <div class="score-card">
+                <div class="score-label">Robot 2</div>
+                <div class="score-value" id="score2">0</div>
+            </div>
+            
+        </div>
+
+        <div class="grid-container">
+            <div id="grid" class="grid"></div>
+        </div>
+        <button onclick="skipCurrentUser()">Skip turn</button>
+
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
